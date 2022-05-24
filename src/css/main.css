@@ -7,7 +7,13 @@ section {
   margin: 96px auto;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+}
+@media (max-width: 850px){
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 section img {
   width: 505px;
@@ -67,7 +73,7 @@ section .modal_bg {
   left: 0;
   position: fixed;
   display: none;
-  background-color: rgba(0,0,0,0.4); 
+  background-color: rgba(18,18,18,.5); 
   z-index: 1;
 }
 section .modal {
@@ -106,7 +112,4 @@ section .modal_bg .modal .modal_content h1 {
   font-size: 42px;
   font-weight: 700;
   padding-bottom: 24px;
-} 
-section .modal_bg .modal .modal_content p {
-  
 } 
